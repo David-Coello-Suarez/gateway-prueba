@@ -21,6 +21,9 @@ async function bootstrap() {
     }),
   );
 
+  // // Filtros globales
+  // app.useGlobalFilters(new KafkaRpcExceptionFilter());
+
   const port = process.env.PORT ?? 3000;
 
   await app.listen(port);
